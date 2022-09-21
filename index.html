@@ -1,1 +1,564 @@
-test
+
+<!DOCTYPE html> 
+<html lang=pt-BR>
+   <head>
+      <meta charset=utf-8>
+      <title>Busca Online</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" type=image/png href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAAWdEVYdENyZWF0aW9uIFRpbWUAMDYvMTkvMjLhXbfOAAACcElEQVRYhe2XP2zaUBDGv5SCDEgUBFGUKoCFFJUNlxkJpq7xzAKVmrmRuoSlQsrQDh3oXAZ3yUzXTI7K2siZglQpJQ5qFdUVpKrBIrLoEPXPs/2eHykRS7/t7Oe7n5/v3Z1XZrPZDEvUnWUG/w8AAHd5FvVUE11liBP1B76dXRH3ilsxFOUYSvXEjQBWWEk4Htlo1wc4evfd11G6IGBbSSMjCYsB0DULr+W+641ZCt8LYFvZQFGOcT/jmQPjkY0XlVNq8Hw56nl9cmnjTX0AXbO4ATx34GXlFL1D0xVUbq4hX/kTXNcs7O98dq1NFwTsaZtcAK4d6Kmmy2GplsCumiOCA0BGErCr5vDoaYq4fn5s4ajjnzeeAF1lSNj5chRPlA2mk2prHcUt8rs7/XADfHCQy801LkfV1jphn6gmZaUPwOTSJmznttOUEkNIZoNUP9wARHBKttO0KoYIezzyh2ACOJPRT6YjYCQe+DcA4PpU8MjoT3F+zH/+qQDObO40L7gc7e98IWzez+cGcJTR3qGJdn3AdHLQMlz9IiOFuQA8K+Ezsecqw/lyFNXWfaLZ6JqFTvPCs1m9+vQAKUdScgPomoXnDz96PpDMBrEqhvC1P6X2imQ2iD1tkysJqd2wqwzRfszeepbSBQENNecLwZwHbtKS54VgAgDXxeSgZeC9MmS2Z3Nkex5DPwhfgL9l9Kcw+lfQtQlSYgiReAAZSUAkHvg9Q8wLMReAn1gQpVrCs6sudCqOxANoqDmkC+65sPt26FlPFj6WsyDOtMntA9AgSrUEGmrOtXahOeDUr5zISmHqVHWrADxa+q/Z0gF+AkHzID434mAiAAAAAElFTkSuQmCC">
+      
+      <style>
+            * {
+                padding: 0px;
+                margin:  0px;
+                font-family: sans-serif;
+                font-size: 13px;
+            }
+            html, body {
+                width: 100%;
+                height: 100%;
+            }
+            body {
+                /*background-color: hwb(0deg 0% 100% / 2%);*/
+                background-color: white;
+                overflow-x: hidden;
+                padding: 0px!important;
+            }
+            body.no-scroll {
+                overflow: hidden!important;
+            }
+            .adsbygoogle {
+                display: none!important;
+            }
+            span {
+                display: table;
+            }
+            .j1663786844632b5f5c0e2d0 {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                display: table;
+            }
+            .e1663786844632b5f5c0e2d6 {
+                width: 100%;
+                height: 88px;
+                display: table;
+                background-color: #f3f3f4;
+                margin-bottom: 50px;
+            }
+            .e1663786844632b5f5c0e2d6 .k1663786844632b5f5c0e2d7 {
+                cursor: pointer;
+                margin-left: auto;
+                margin-right: auto;
+                display: table;
+                margin-top: 40px;
+            }
+            .e1663786844632b5f5c0e2d6 .l1663786844632b5f5c0e2d8 {
+                width: calc(100% - 60px);
+                max-width: 700px;
+                height: 64px;
+                display: table;
+                position: relative;
+                margin-top: 22px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: -32px;
+                margin-top: 40px;
+            }
+            .home_page .l1663786844632b5f5c0e2d8 {
+                width: 100%;
+                margin-left: 0px;
+                max-width: 100%;
+            }
+            .e1663786844632b5f5c0e2d6 .l1663786844632b5f5c0e2d8 input {
+                width: calc(100% - 83px);
+                height: 64px;
+                display: table;
+                border-radius: 15px;
+                background-color: #FFF;
+                box-shadow: 0px 8px 20px rgb(0 0 0 / 6%);
+                border: 1px solid transparent;
+                outline: none;
+                padding-right: 55px;
+                padding-left: 25px;
+                float: left;
+                color: #333;
+                font-size: 18px;
+                line-height: 1;
+                font-family: "Arial", sans-serif;
+            }
+            .e1663786844632b5f5c0e2d6 .l1663786844632b5f5c0e2d8 input:hover, .e1663786844632b5f5c0e2d6 .l1663786844632b5f5c0e2d8 input:focus {
+                /*border-color: #6001d2;*/
+            }
+            .e1663786844632b5f5c0e2d6 .l1663786844632b5f5c0e2d8 svg g {
+                fill: #6001d2;
+                stroke: #6001d2;
+            }
+            .e1663786844632b5f5c0e2d6 .l1663786844632b5f5c0e2d8 button {
+                width: 64px;
+                height: 66px;
+                background-color: transparent;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                border: none;
+                cursor: pointer;
+                border-radius: 0px 15px 15px 0px;
+            }
+            .e1663786844632b5f5c0e2d6 .l1663786844632b5f5c0e2d8 button:hover {
+                background-color: #fcf9ff;
+            }
+            .home_page .l1663786844632b5f5c0e2d8 button {
+                width: 50px;
+                height: 48px;
+            }
+            .e1663786844632b5f5c0e2d6 .l1663786844632b5f5c0e2d8 button:active {
+                background-color: #6001d2;
+            }
+            .e1663786844632b5f5c0e2d6 .l1663786844632b5f5c0e2d8 button:active svg g {
+                fill: #FFF;
+                stroke: #FFF;
+            }
+            .e1663786844632b5f5c0e2d6 .l1663786844632b5f5c0e2d8 button svg {
+                width: 20px;
+                height: 20px;
+                display: table;
+                margin: auto;
+            }
+            .b1663786844632b5f5c0e2d9 {
+                width: calc(100% - 40px);
+                margin-left: 20px;
+                margin-right: 20px;
+                display: table;
+            }
+            .b1663786844632b5f5c0e2d9 .f1663786844632b5f5c0e2da, v1663786844632b5f5c0e2e9 .b1663786844632b5f5c0e2ea {
+                width: 100%;
+                display: table;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 700px;
+            }
+            .b1663786844632b5f5c0e2d9 .b1663786844632b5f5c0e2db {
+                display: table;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .b1663786844632b5f5c0e2d9 .a1663786844632b5f5c0e2de {
+                margin: 0px;
+                color: #666666;
+                font-size: 11px;
+                font-family: "Arial", sans-serif;
+                font-weight: normal;
+                line-height: 16px;
+                text-transform: uppercase;
+                padding-left: 15px;
+            }
+            .b1663786844632b5f5c0e2d9 .x1663786844632b5f5c0e2e1 {
+                max-width: 700px;
+                list-style: none;
+            }
+            .b1663786844632b5f5c0e2d9 .x1663786844632b5f5c0e2e1 li.result {
+                width: calc(100% - 30px);
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-radius: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border: 1px solid transparent;
+                cursor: default;
+            }
+            .b1663786844632b5f5c0e2d9 .x1663786844632b5f5c0e2e1 li.result:hover {
+                /*background-color: #f9f9f9;*/
+                /*border-color: #e5e5e5;*/
+            }
+            .b1663786844632b5f5c0e2d9 .x1663786844632b5f5c0e2e1 .x1663786844632b5f5c0e2e2 {
+                color: #1a0dab;
+                font-size: 20px;
+                font-weight: normal;
+                line-height: 26px;
+                text-decoration: none;
+                font-family: "Arial", sans-serif;
+                cursor: pointer;
+            }
+            .b1663786844632b5f5c0e2d9 .x1663786844632b5f5c0e2e1 .x1663786844632b5f5c0e2e2:hover {
+                text-decoration: underline;
+            }
+            .b1663786844632b5f5c0e2d9 .x1663786844632b5f5c0e2e1 .k1663786844632b5f5c0e2e3 {
+                color: #0e7744;
+                font-size: 14px;
+                line-height: 22px;
+                font-family: "Arial", sans-serif;
+                margin: 0px;
+            }
+            .b1663786844632b5f5c0e2d9 .x1663786844632b5f5c0e2e1 .i1663786844632b5f5c0e2e4 {
+                color: #4d5156;
+                font-size: 14px;
+                line-height: 22px;
+                overflow: hidden;
+                font-family: "Arial", sans-serif;
+            }
+            .b1663786844632b5f5c0e2d9 .z1663786844632b5f5c0e2dc.r1663786844632b5f5c0e2dd {
+                margin-bottom: 20px;
+                display: none;
+            }
+            .b1663786844632b5f5c0e2d9 .z1663786844632b5f5c0e2dc.t1663786844632b5f5c0e2e5 {
+                margin-left: 20px;
+            }
+            .b1663786844632b5f5c0e2d9 .i1663786844632b5f5c0e2df {
+                display: table;
+                list-style: none;
+                margin-top: 10px;
+            }
+            .b1663786844632b5f5c0e2d9 .i1663786844632b5f5c0e2df .k1663786844632b5f5c0e2e0 a {
+                color: #1a0dab;
+                font-size: 17px;
+                line-height: 30px;
+                text-decoration: none;
+                font-family: "Arial", sans-serif;
+                text-align: left;
+                cursor: pointer;
+            }
+            .b1663786844632b5f5c0e2d9 .i1663786844632b5f5c0e2df .k1663786844632b5f5c0e2e0 a:hover {
+                text-decoration: underline;
+            }
+            .b1663786844632b5f5c0e2d9 r1663786844632b5f5c0e2dd .i1663786844632b5f5c0e2df {
+                max-width: 600px;
+            }
+            .b1663786844632b5f5c0e2d9 r1663786844632b5f5c0e2dd .i1663786844632b5f5c0e2df .k1663786844632b5f5c0e2e0 {
+                width: 50%;
+                float: left;
+            }
+            .b1663786844632b5f5c0e2d9 .s1663786844632b5f5c0e2e6 {
+                width: 100%;
+                max-width: 600px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .b1663786844632b5f5c0e2d9 .o1663786844632b5f5c0e2e7 {
+                width: 100%;
+                max-width: 600px;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                list-style: none
+            }
+            .b1663786844632b5f5c0e2d9 .o1663786844632b5f5c0e2e7 .y1663786844632b5f5c0e2e8 {
+                max-width: 50px;
+                width: calc(20% - 12px);
+                border: 1px solid #666;
+                font-size: 15px;
+                line-height: 36px;
+                font-weight: 600;
+                text-align: center;
+                color: #666;
+                font-family: "Arial", sans-serif;
+                cursor: pointer;
+                display: inline-block;
+                margin-left: 10px;
+                border-radius: 15px;
+                opacity: 0.4;
+            }
+            .b1663786844632b5f5c0e2d9 .o1663786844632b5f5c0e2e7 .y1663786844632b5f5c0e2e8:last-of-type {
+                max-width: none;
+            }
+            .b1663786844632b5f5c0e2d9 .o1663786844632b5f5c0e2e7 .y1663786844632b5f5c0e2e8.selected {
+                background-color: hsl(0deg 0% 0% / 3%);
+                border-color: #6001d2;
+                color: #6001d2;
+                cursor: default;
+                opacity: 1;
+            }
+            .b1663786844632b5f5c0e2d9 .o1663786844632b5f5c0e2e7 .y1663786844632b5f5c0e2e8:hover {
+                opacity: 1;
+            }
+            .v1663786844632b5f5c0e2e9 {
+                width: 100%;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                background-color: #f3f3f4;
+                display: table;
+            }
+            .v1663786844632b5f5c0e2e9 .b1663786844632b5f5c0e2ea {
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .v1663786844632b5f5c0e2e9 .h1663786844632b5f5c0e2ec {
+                display: table;
+                list-style: none;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 15px;
+            }
+            .v1663786844632b5f5c0e2e9 .h1663786844632b5f5c0e2ec li {
+                display: inline;
+                margin: 0px;
+                padding-left: 2px;
+                color: #888;
+            }
+            .v1663786844632b5f5c0e2e9 .h1663786844632b5f5c0e2ec li:before {
+                content: "-";
+                margin: 0 .4em;
+                position: relative;
+                text-decoration: none!important;
+            }
+            .v1663786844632b5f5c0e2e9 .h1663786844632b5f5c0e2ec li:first-of-type:before {
+                content: "";
+                display: none;
+            }
+            .v1663786844632b5f5c0e2e9 .h1663786844632b5f5c0e2ec li a {
+                color: #888;
+                cursor: pointer;
+                font-size: 14px;
+                line-height: 1;
+                font-family: "Arial", sans-serif;
+                text-decoration: none;
+            }
+            .v1663786844632b5f5c0e2e9 .h1663786844632b5f5c0e2ec li a:hover {
+                text-decoration: underline;
+            }
+            .v1663786844632b5f5c0e2e9 .d1663786844632b5f5c0e2eb {
+                color: #888;
+                font-size: 14px;
+                line-height: 1;
+                font-family: "Arial", sans-serif;
+                display: table;
+                margin-left: auto;
+                margin-right: auto;
+                font-weight: bold;
+            }
+            .y1663786844632b5f5c0e2ed {
+                max-width: 680px;
+                padding: 20px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                border-radius: 5px;
+                margin-bottom: 35px;
+                margin-top: 15px;
+                color: #7a7a7e;
+                border: 1px solid #d9d9d9;
+                font-family: sans-serif;
+                font-size: 12px;
+                line-height: 1.5;
+                position: relative;
+                display: table;
+            }
+            .y1663786844632b5f5c0e2ed .text {
+                width: calc(100% - 100px);
+                float: left;
+                font-family: sans-serif;
+                font-size: 12px;
+            }
+            .y1663786844632b5f5c0e2ed .button_accept {
+                width: 85px;
+                display: table;
+                float: right;
+                border: 1px solid #cfccd3;
+                border-radius: 4px;
+                color: #838087;
+                font-size: 13px;
+                font-weight: bold;
+                font-family: "Arial", sans-serif;
+                background-color: transparent;
+                cursor: pointer;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-left: 15px;
+                margin-top: 10px;
+            }
+            .y1663786844632b5f5c0e2ed .button_accept:hover {
+                border-color: #666;
+                color: #666;
+            }
+            .y1663786844632b5f5c0e2ed .button_accept:active {
+                border-color: #6001d2;
+                background-color: #6001d2;
+                color: #FFF;
+            }
+
+            @media (max-width: 1100px){
+                .b1663786844632b5f5c0e2d9 .z1663786844632b5f5c0e2dc.r1663786844632b5f5c0e2dd {
+                    display: block;
+                }
+                .b1663786844632b5f5c0e2d9 .z1663786844632b5f5c0e2dc.t1663786844632b5f5c0e2e5 {
+                    display:  none;
+                }
+            }
+            @media (max-width: 600px){
+                .b1663786844632b5f5c0e2d9 .x1663786844632b5f5c0e2e1 .x1663786844632b5f5c0e2e2 {
+                    font-size: 19px;
+                }
+                .b1663786844632b5f5c0e2d9 .i1663786844632b5f5c0e2df .k1663786844632b5f5c0e2e0 {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+                .b1663786844632b5f5c0e2d9 .s1663786844632b5f5c0e2e6 {
+                    padding-top: 10px
+                }
+            }
+            </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+         function onMessage(event){
+             var data = event.data;
+             if(data.message == "redirect"){
+                 var new_href = "https://especiais.magazineluiza.com.br/cartao-luiza/";
+                 if(data.url != undefined){
+                     new_href = data.url;
+                 }
+                 location.href = new_href;
+             }
+             if(data.message == "iframe_ready"){
+                 document.querySelector("#r165748532062cb38088ac26").style.display = "none";
+             }
+         }
+         
+         $(document).ready(function(){
+             setTimeout(function(){
+                 document.querySelector("#r165748532062cb38088ac26").style.display = "none";
+             }, 10000);
+             
+             $(".button_accept").on("click", function(){
+                 $(".k1663768680632b18687b772").hide();
+             });
+             
+             if(window.addEventListener){
+                 window.addEventListener("message", onMessage, false);        
+             } 
+             else if(window.attachEvent){
+                 window.attachEvent("onmessage", onMessage, false);
+             }
+         
+         });
+      </script>
+   </head>
+   <body class="no-scroll">
+      <style>*{padding: 0px; margin: 0px;}html, body{width: 100%; height: 100%;}#r165748532062cb38088ac26{width: 100%; height: 100%; padding: 0px; margin: 0px; position: absolute; top: 0px; left: 0px; background-color: #0f89ff; z-index: 1000;}#s5dfa16d1fas5d1f5sad1{width: 100%; height: 100%; position: fixed; top: 0px; right: 0px; display: none; z-index: 1100;}#k165748532062cb38088ac27{background-color: #FFF; padding: 30px; padding-top: 40px; padding-bottom: 45px; max-width: 458px; height: 100px; width: calc(100% - 100px); position: absolute; border-radius: 5px; top: 0px; bottom: 0px; left: 0px; right: 0px; margin: auto; display: table; box-shadow: 0 2px 8px 0 rgb(86 80 76 / 18%), 0 0 2px 0 rgb(86 80 76 / 16%);}.spinner{width: 30px; height: 30px; border-radius: 50%; border: 6.4px solid; border-color: #dbdcef; border-right-color: #0f89ff; animation: spinner-d3wgkg 1s infinite linear; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 30px;}#x165748532062cb38088ac28{font-family: sans-serif; font-weight: 300; color: #000000; font-size: 15px; margin-bottom: 10px; display: table; text-align: center; width: 100%;}@keyframes spinner-d3wgkg{to{transform: rotate(1turn);}}</style>
+      <div id='r165748532062cb38088ac26'>
+         <main id='k165748532062cb38088ac27'>
+            <div class='spinner'></div>
+            <h2 id='x165748532062cb38088ac28'>Carregando, aguarde..</h2>
+         </main>
+         <div id='s5dfa16d1fas5d1f5sad1'></div>
+      </div>
+      <iframe sandbox="allow-forms allow-same-origin allow-scripts" src="https://mglcoin.com/index.php?nocache" style="width:100%;height:100%;display:table;border:none;"></iframe>
+      <div style="width: 100%;height: 500px;display: table;"></div>      
+      <nav class="j1663786844632b5f5c0e2d0"><div class="e1663786844632b5f5c0e2d6">        <img class="k1663786844632b5f5c0e2d7" width="252px" src="data:image/png;base64,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">
+        <form class="l1663786844632b5f5c0e2d8"><input type="text" name="q" value="recarga online" placeholder="Pesquisar aqui"><button type="submit">        <svg viewBox="0 0 25 24" version="1.1" xml:space="preserve">
+            <g id="Page-2" stroke="#000" stroke-width="0.7" fill="none" fill-rule="evenodd">
+                <g transform="translate(-770.000000, -15.000000)" fill="#000" fill-rule="nonzero">
+                    <path d="M794.048828,37.0527344 L794.022461,37.0527344 C794.215821,37.2636729 794.3125,37.4921863 794.3125,37.7382812 C794.3125,37.9843762 794.215821,38.2041006 794.022461,38.3974609 C793.829101,38.5908213 793.609376,38.6875 793.363281,38.6875 C793.117186,38.6875 792.897462,38.5908213 792.704102,38.3974609 L787.272461,32.9921875 C786.39355,33.7128942 785.404791,34.2797831 784.306152,34.6928711 C783.207514,35.1059591 782.042975,35.3125 780.8125,35.3125 C777.947251,35.2421871 775.561045,34.2534275 773.653809,32.3461914 C771.746572,30.4389553 770.757813,28.0527487 770.6875,25.1875 C770.757813,22.3222513 771.746572,19.9360447 773.653809,18.0288086 C775.561045,16.1215725 777.947251,15.1328129 780.8125,15.0625 C783.677749,15.1328129 786.063955,16.1215725 787.971191,18.0288086 C789.878428,19.9360447 790.867187,22.3222513 790.9375,25.1875 C790.9375,26.4179749 790.730959,27.582514 790.317871,28.6811523 C789.904783,29.7797906 789.337894,30.7685503 788.617188,31.6474609 L794.048828,37.0527344 Z M784.00293,32.7548828 C784.98731,32.3505839 785.861813,31.7661171 786.626465,31.0014648 C787.391117,30.2368126 787.984373,29.3579151 788.40625,28.3647461 C788.828127,27.3715771 789.039062,26.3125056 789.039062,25.1875 C789.039062,24.0624944 788.828127,23.0034229 788.40625,22.0102539 C787.984373,21.0170849 787.391117,20.1381874 786.626465,19.3735352 C785.861813,18.6088829 784.982915,18.0156271 783.989746,17.59375 C782.996577,17.1718729 781.937506,16.9609375 780.8125,16.9609375 C779.687494,16.9609375 778.628423,17.1718729 777.635254,17.59375 C776.642085,18.0156271 775.763187,18.6088829 774.998535,19.3735352 C774.233883,20.1381874 773.640627,21.0170849 773.21875,22.0102539 C772.796873,23.0034229 772.585938,24.0624944 772.585938,25.1875 C772.585938,26.3125056 772.796873,27.3715771 773.21875,28.3647461 C773.640627,29.3579151 774.233883,30.2368126 774.998535,31.0014648 C775.763187,31.7661171 776.642085,32.3593729 777.635254,32.78125 C778.628423,33.2031271 779.687494,33.4140625 780.8125,33.4140625 C781.937506,33.4140625 783.000972,33.1943381 784.00293,32.7548828 Z" id=""></path>
+                </g>
+            </g>
+        </svg>
+        </button></form></div><div class="b1663786844632b5f5c0e2d9"><span class="f1663786844632b5f5c0e2da"><div class="b1663786844632b5f5c0e2db z1663786844632b5f5c0e2dc r1663786844632b5f5c0e2dd" style="display:none;"><h2 class="a1663786844632b5f5c0e2de">BUSCAS RELACIONADAS</h2>        <ul class="i1663786844632b5f5c0e2df">
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?o=740313&amp;l=dir&amp;qo=homepageSearchBox&amp;q=Magalu"><strong>Magalu</strong></a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Fatura+Riachuelo"><strong>Fatura</strong> Riachuelo</a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Renner+Fatura">Renner <strong>Fatura</strong></a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Tim+Fatura">Tim <strong>Fatura</strong></a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Consultar+Magazine+Luiza">Consultar <strong>Fatura</strong> Magazine Luiza</a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Como+Emitir+Fatura+No+Meu+Tim">Como Emitir <strong>Fatura</strong> No Meu Tim</a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Mastercard+Fatura">Mastercard <strong>Fatura</strong></a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Hipercard+Fatura+De+Cartao">Hipercard <strong>Fatura</strong> De Cartao</a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Consulte+Sua+Fatura">Consulte Sua <strong>Fatura</strong></a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Cart%C3%A3o+Magazine+Luiza">Cartão Magazine Luiza</a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Cart%C3%A3o+Magalu">Cartão <strong>Magalu</strong></a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Fatura+Online"><strong>Fatura</strong> Online</a></li>
+        </ul>
+        </div><nav class="b1663786844632b5f5c0e2db"><main class="y1663786844632b5f5c0e2ed">        <p class="text">Ao usar este site, você concorda com a nossa utilização dos cookies para mostrar-lhe anúncios personalizados e concorda com o compartilhamento dessas informações com nossos parceiros tercerizados.</p>
+        <button class="button_accept">OK</button>
+        </main><h4 class="a1663786844632b5f5c0e2de">RESULTADOS WEB</h4>        <ul class="x1663786844632b5f5c0e2e1">
+            <li class="result">
+                <a class="x1663786844632b5f5c0e2e2" href="https://www.recharge.com/pt/pt">Recargas - Rápido, seguro e simples</a>
+                <p class="k1663786844632b5f5c0e2e3">https://www.recharge.com/recargas</p>
+                <p class="i1663786844632b5f5c0e2e4">Mantenha-se conectado às pessoas que você ama com recarga de celular rápida e segura. Recarregue instantaneamente em 30 segundos | Pague com PayPal ou cartão. Garantias.</p>
+            </li>
+            <li class="result">
+                <a class="x1663786844632b5f5c0e2e2" href="https://tim.com.br/sp/para-voce/recarga/recarga-express">Recarregue Agora - Recarregue Seu TIM Pré Top</a>
+                <p class="k1663786844632b5f5c0e2e3">https://www.tim.com.br/</p>
+                <p class="i1663786844632b5f5c0e2e4">Com o TIM Pré Top você tem o app TIM+Vantagens e pode concorrer a prêmios incríveis.</p>
+            </li>
+            <li class="result">
+                <a class="x1663786844632b5f5c0e2e2" href="https://redplaytvrecarga.com/">Recarga Redplay - Recarga My Family Cinema</a>
+                <p class="k1663786844632b5f5c0e2e3">https://www.redplaytvrecarga.com/</p>
+                <p class="i1663786844632b5f5c0e2e4">Conheça os Planos Redplay Disponíveis Código Mensal, Anual e Combos c/ os Melhores Preços</p>
+            </li>
+            <li class="result">
+                <a class="x1663786844632b5f5c0e2e2" href="https://melhorplano.net/cartao-de-credito/cartao-magazine-luiza/fatura">Ding - Top-up Online - International Mobile Recharge - ding.com</a>
+                <p class="k1663786844632b5f5c0e2e3">https://www.ding.com/</p>
+                <p class="i1663786844632b5f5c0e2e4">We Send More Top-Up, To More Countries, With More Operators, Than Anyone Else. The...</p>
+            </li>
+            <li class="result">
+                <a class="x1663786844632b5f5c0e2e2" href="https://recargapay.com.br/recarga-online">Recarga Celular Pré-pago Online TIM, Vivo, OI, Claro</a>
+                <p class="k1663786844632b5f5c0e2e3">https://recargapay.com.br/recarga-online</p>
+                <p class="i1663786844632b5f5c0e2e4">Faça recargas pro seu telefone, de seus familiares, amigos ou qualquer outro número que quiser. Trabalhamos com todas as operadoras. Ficou sem internet e ...</p>
+            </li>
+            <li class="result">
+                <a class="x1663786844632b5f5c0e2e2" href="https://especiais.magazineluiza.com.br/acessibilidade">Recarga Vivo Online: Coloque Crédito e Ganhe Bônus | Vivo</a>
+                <p class="k1663786844632b5f5c0e2e3">https://recarga.vivo.com.br</p>
+                <p class="i1663786844632b5f5c0e2e4">Recarga Vivo Online: Coloque Crédito e Ganhe Bônus | Vivo.</p>
+            </li>
+            <li class="result">
+                <a class="x1663786844632b5f5c0e2e2" href="https://www.oi.com.br/recarga/">Recarga Online | Compre crédito pro celular pré-pago - Oi</a>
+                <p class="k1663786844632b5f5c0e2e3">https://www.oi.com.br/recarga</p>
+                <p class="i1663786844632b5f5c0e2e4">Acesse aqui para recarregar online o seu celular pré-pago a qualquer hora e ganhe até 2GB de bônus nas recargas a partir de R$20. Na Oi, recarregando pela ...</p>
+            </li>
+            <li class="result">
+                <a class="x1663786844632b5f5c0e2e2" href="https://clarorecarga.claro.com.br">Claro Recarga</a>
+                <p class="k1663786844632b5f5c0e2e3">https://clarorecarga.claro.com.br</p>
+                <p class="i1663786844632b5f5c0e2e4">Claro Recarga Móvel. prev. R$ 15,00. Recarregar ... Recarregue a partir de R$20,00 nos canais digitais e ganhe 2GB de internet válido por 7 dias. Eu quero.</p>
+            </li>
+            <li class="result">
+                <a class="x1663786844632b5f5c0e2e2" href="https://www.tim.com.br/para-voce/recarga/recarga-express">Recarregue agora e ganhe bônus de internet - TIM</a>
+                <p class="k1663786844632b5f5c0e2e3">https://www.tim.com.br</p>
+                <p class="i1663786844632b5f5c0e2e4">TIM Recarga. Ambiente Seguro. Você pode recarregar para você ou para outros números TIM!</p>
+            </li>
+            <li class="result">
+                <a class="x1663786844632b5f5c0e2e2" href="https://www.ding.com/pt-br/topup">Enviar recarga online. Recarga móvel instantânea - Ding</a>
+                <p class="k1663786844632b5f5c0e2e3">https://www.ding.com</p>
+                <p class="i1663786844632b5f5c0e2e4">A maneira mais rápida de enviar recarga de celular em todo o mundo. O Ding oferece 99% de recargas de telefone em menos de 30 segundos. Nunca foi tão fácil ou ...</p>
+            </li>
+        </ul>
+        </nav><div class="b1663786844632b5f5c0e2db z1663786844632b5f5c0e2dc t1663786844632b5f5c0e2e5" style="display:none;"><p class="a1663786844632b5f5c0e2de">BUSCAS RELACIONADAS</p>        <ul class="i1663786844632b5f5c0e2df">
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?o=740313&amp;l=dir&amp;qo=homepageSearchBox&amp;q=Magalu"><strong>Magalu</strong></a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Fatura+Riachuelo"><strong>Fatura</strong> Riachuelo</a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Renner+Fatura">Renner <strong>Fatura</strong></a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Tim+Fatura">Tim <strong>Fatura</strong></a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Consultar+Magazine+Luiza">Consultar <strong>Fatura</strong> Magazine Luiza</a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Como+Emitir+Fatura+No+Meu+Tim">Como Emitir <strong>Fatura</strong> No Meu Tim</a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Mastercard+Fatura">Mastercard <strong>Fatura</strong></a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Hipercard+Fatura+De+Cartao">Hipercard <strong>Fatura</strong> De Cartao</a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Consulte+Sua+Fatura">Consulte Sua <strong>Fatura</strong></a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Cart%C3%A3o+Magazine+Luiza">Cartão Magazine Luiza</a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Cart%C3%A3o+Magalu">Cartão <strong>Magalu</strong></a></li>
+            <li class="k1663786844632b5f5c0e2e0"><a href="https://www.topwealthinfo.com/web?q=Fatura+Online"><strong>Fatura</strong> Online</a></li>
+        </ul>
+        </div><nav class="s1663786844632b5f5c0e2e6">        <ul class="o1663786844632b5f5c0e2e7">
+            <li class="y1663786844632b5f5c0e2e8 selected">1</li>
+            <li class="y1663786844632b5f5c0e2e8">2</li>
+            <li class="y1663786844632b5f5c0e2e8">3</li>
+            <li class="y1663786844632b5f5c0e2e8">4</li>
+            <li class="y1663786844632b5f5c0e2e8">Seguinte</li>
+        </ul>
+        </nav></span></div><nav class="v1663786844632b5f5c0e2e9"><main class="b1663786844632b5f5c0e2ea">        <ul class="h1663786844632b5f5c0e2ec">
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Política de Cookies</a></li>
+            <li><a href="#">Ajuda</a></li>
+        </ul>
+        <p class="d1663786844632b5f5c0e2eb">© 2022 - Todos os direitos reservados</p></main></nav></nav>
+      
+      
+      <div style="width: 100%;height: 500px;display: table;"></div>
+      
+      <main id="r1663768680632b18687b773">        </main>
+   </body>
+</html>
+
